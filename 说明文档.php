@@ -8,7 +8,7 @@
 <{footer}>  <include file="Common:footer" />
 <{footer_js}>  <include file="Common:footer_js" />
 
-********************************************新闻//news//列表页面说明**********************************************************************
+********************************************新闻//news//列表页面说明****************************************
 ==========================================================
 <{$news1$}>
 if(!empty($cat_img)){
@@ -80,7 +80,7 @@ if(!empty($news['list'])){
 ==========================================================                        
 <{$news7$}>
 <{:I('get.cid')}>
-==========================================================
+
 
 ********************************************新闻详情页面说明//news_cont//*******************************************************
 
@@ -1193,11 +1193,11 @@ if(I('get.cid') == 77){
 			<li class="<{$class2}>"><a href="<{$vle.url}>"><span><{$vle.catname}></span></a><em></em></li>
 			<?php
 				}else{
-				if($vle['id'] == 26){
-					$href = 'index.php?s=/Home/Index/news/cid/26';
-				}else{
-					$href = 'javascript:void(0)';
-				}
+					if($vle['id'] == 26){
+						$href = 'index.php?s=/Home/Index/news/cid/26';
+					}else{
+						$href = 'javascript:void(0)';
+					}
 			?>
 			
 			<li class="<{$class2}> more_list"><a <?php if($str == 5 || $str == 26){?>style="background:#afb0ba;"class="unbindbtn"<?php }?> href="<{$href}>"><span><{$vle.catname}></span></a><em></em>
